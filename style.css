@@ -13,7 +13,7 @@
   margin: 0;
   padding: 0;
   color: white;
-  font-family: unset;
+  font-family: 'Nunito Sans', sans-serif;
 }
 
 /** 
@@ -61,7 +61,7 @@ body {
   left: 0;
   padding: 20px;
   width: calc(100%);
-  font-size: 20px;
+  font-size: 17px;
   display: flex;
   flex-direction: column;
   background-image: linear-gradient(to bottom, transparent, rgba(128, 23, 23, 0.411) 25%);
@@ -83,7 +83,7 @@ h1 {
 }
 
 h2 {
-  font-size: 22px;
+  font-size: 17px;
   font-weight: 200;
   font-style: oblique;
 }
@@ -99,4 +99,8 @@ h2 {
   background-color: #ff0033;
   position: absolute;
   bottom: 75px;
+}
+
+.titel{
+  font-family: 'Nunito Sans' , sans-serif;
 }
