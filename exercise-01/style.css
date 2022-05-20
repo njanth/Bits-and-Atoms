@@ -1,0 +1,91 @@
+/** 
+ * A very basic CSS reset:
+ * More about CSS resets: https://meyerweb.com/eric/tools/css/reset/
+ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color:white;
+  font-family:unset;
+
+}
+
+/** 
+ * Card sizing and positioning.
+ * Don't mess with this!
+ */
+.card {
+  width: 300px;
+  height: 540px;
+  margin: 40px auto 0 auto;
+}
+
+/** 
+ * Just some styling to make the card visible.
+ * Feel free to change this!
+ */
+
+ body{
+  height: center;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.card {
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  border-radius: 30px;
+  padding: 20px;
+  overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    transition: 250ms ease-in-out;
+}
+.card img{
+    height: 110%;
+}
+.card_content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 20px;
+    width: calc(100%);
+    font-size: 20px;
+    display: flex;
+    flex-direction: column;
+    background-image: linear-gradient(to bottom, transparent, rgba(128, 23, 23, 0.411) 25%);
+    transform: translateY(calc(100%  - 108px));
+    transition: 250ms ease-in-out;
+}
+.card:hover .card_content{
+    transform: translateY(0);
+}
+.card:hover{
+    transform: scale(1.1);
+}
+h1{
+    font-size: 30px;
+    font-weight: 700;
+}
+h2{
+  font-size: 22px;
+  font-weight: 200;
+    font-style: oblique;
+}
+.content_head{
+    position: relative;
+}
+.content_head::after{
+    content: '';
+    height: 4px;
+    width: 70%;
+    background-color: #ff0033;
+    position: absolute;
+    bottom: 75px;
+}
